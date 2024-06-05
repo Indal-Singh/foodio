@@ -15,8 +15,10 @@
                     <h1 class="text-3xl font-weight-bold">Categories</h1>
 
                     <a href="/admin/add-category">
-                        <button  class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add Category</button>
-                       </a>
+                        <button
+                            class="my-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Add
+                            Category</button>
+                    </a>
 
                     <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
                         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -24,121 +26,19 @@
                                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                                 <tr>
                                     <th scope="col" class="px-6 py-3">
-                                        Product name
+                                        name
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Color
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Category
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        Price
+                                        Description
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Action
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr
-                                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Apple MacBook Pro 17"
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        Silver
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Laptop
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        $2999
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <a href="/admin/edit-category"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr
-                                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Microsoft Surface Pro
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        White
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Laptop PC
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        $1999
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr
-                                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Magic Mouse 2
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        Black
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Accessories
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        $99
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
-                                </tr>
-                                <tr
-                                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Google Pixel Phone
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        Gray
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Phone
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        $799
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
-                                </tr>
+                            <tbody id="ListData">
                                 <tr>
-                                    <th scope="row"
-                                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                        Apple Watch 5
-                                    </th>
-                                    <td class="px-6 py-4">
-                                        Red
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        Wearables
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        $999
-                                    </td>
-                                    <td class="px-6 py-4">
-                                        <a href="#"
-                                            class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
-                                    </td>
+                                    <td col="2">Loading...</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -146,7 +46,58 @@
 
                 </div>
             </div>
+            <script>
+                const listAllCat = async () => {
+                    try {
+                        const response = await fetch('/admin/api/category');
+                        const data = await response.json();
+                        let cluster = '';
+                        data.forEach(list => {
+                            cluster += ` <tr
+                                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                                    <th th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                        ${list.name}
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        ${list.description}
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <button class="inline-block px-3 py-3 mt-1 text-lg font-semibold text-white rounded-lg hover:bg-[#F54720] bg-[#F54748]" onclick="deleteCat('${list._id}')">Delete</button>
+                                    </td>
+                                    
+                                </tr>`;
+                        });
+                        document.getElementById('ListData').innerHTML = cluster;
+                    } catch (error) {
+                        console.error(error);
+                    }
+                };
 
+                listAllCat();
+                const deleteCat = async (id) => {
+                    try {
+                        let catres = await fetch('/admin/api/category', {
+                            method: 'delete',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                id
+                            })
+                        });
+                        let data = await catres.json();
+                        if (data.status) {
+                            listAllCat();
+                        }
+                        else {
+                            alert(data.msg);
+                        }
+                    } catch (error) {
+                        console.log(`Error to add category`, error);
+                    }
+                }
+
+            </script>
 </body>
 
 </html>

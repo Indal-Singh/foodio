@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const connectDB = require('./db')
 require('dotenv').config()
 
 const indexRouter = require('./routes/index');
@@ -46,5 +47,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+connectDB();
 
 module.exports = app;

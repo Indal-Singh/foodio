@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {requireAdminAuth, redirectToDashboard} = require('../../middleware/admin/auth');
+const { categoryCreateHandler, categoryGetHandler, categoryDeleteHandler } = require('../../controllers/admin/api');
 
 /* GET home page. */
 router.get('/',redirectToDashboard, function(req, res, next) {
@@ -47,6 +48,13 @@ router.get('/add-product', requireAdminAuth, (req, res) => {
 router.get('/edit-product', requireAdminAuth, (req, res) => {
   res.render('admin/products/editProduct.ejs', {pageTitle:"Edit Products - Foodio",navActive:"products"});
 });
+
+/// createding admin api routes 
+
+router.post('/api/category',requireAdminAuth,categoryCreateHandler) // for create 
+router.delete('/api/category',requireAdminAuth,categoryDeleteHandler) // for delete
+router.get('/api/category',categoryGetHandler) // for list data
+
 
 
 router.get('/logout', (req, res) => {
